@@ -1,5 +1,3 @@
-
-
 public class Prestamo {
     private String codigo;
     private String titulo;
@@ -14,7 +12,6 @@ public class Prestamo {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-
 
     public String getTitulo() {
         return this.titulo;
@@ -48,21 +45,21 @@ public class Prestamo {
         this.fecha_devolucion = fecha_devolucion;
     }
 
-  
- //Libro(){ matricula=0; promedio=0;}
-Prestamo(String c,String t, String a, java.util.Date actual, java.util.Date dev ){
-codigo=c;
-titulo=t;
-autor=a;
-fecha_emision=actual;
-fecha_devolucion=dev;
+    // Libro(){ matricula=0; promedio=0;}
+    Prestamo(String c, String t, String a, java.util.Date actual, java.util.Date dev) {
+        codigo = c;
+        titulo = t;
+        autor = a;
+        fecha_emision = actual;
+        fecha_devolucion = dev;
 
-}
-void muestraDatos(){
-    System.out.println("Titulo: "+ titulo);
-    System.out.println("Autor: "+ autor);
-    System.out.println("Fecha_emision: "+ fecha_emision);
-    System.out.println("Fecha_devolucion: "+ fecha_devolucion);
- 
+    }
+
+    void muestraDatos() {
+        System.out.println("Titulo: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Fecha_emision: " + fecha_emision);
+        System.out.println("Fecha_devolucion: " + fecha_devolucion);
+
     }
 }

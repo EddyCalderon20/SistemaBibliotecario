@@ -45,26 +45,26 @@ public class Libro {
         this.cantidad = cantidad;
     }
 
-
-Libro(String codigo, String titulo, String autor, int cantidad){ 
-this.codigo=codigo;
-this.titulo=titulo;
-this.autor=autor;
-this.cantidad=cantidad;
-this.prestamo= false;
-}
-Libro(String codigo, String titulo, String autor, int cantidad,boolean prestamo){ 
-    this.codigo=codigo;
-    this.titulo=titulo;
-    this.autor=autor;
-    this.cantidad=cantidad;
-    this.prestamo= prestamo;
+    Libro(String codigo, String titulo, String autor, int cantidad) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.cantidad = cantidad;
+        this.prestamo = false;
     }
 
-void muestraDatos(){
-    System.out.println("Código: "+ codigo);
-    System.out.println("Título: "+titulo);
-    System.out.println("Autor: "+ autor );
-    System.out.println("Cantidad: "+ cantidad);
+    Libro(String codigo, String titulo, String autor, int cantidad, boolean prestamo) {
+        this.codigo = codigo;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.cantidad = cantidad;
+        this.prestamo = prestamo;
+    }
+
+    void muestraDatos() {
+        System.out.println("Código: " + codigo);
+        System.out.println("Título: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Cantidad: " + cantidad);
     }
 }
